@@ -1,5 +1,16 @@
 # CS340--Dashboard-Project
 
 ## How do you write programs that are maintainable, readable, and adaptable? Especially consider your work on the CRUD Python module from Project One, which you used to connect the dashboard widgets to the database in Project Two. What were the advantages of working in this way? How else could you use this CRUD Python module in the future?
+
+  Writing code that is maintainable and adaptable can be done through factoring out code.  Instead of having a long method you can factor
+  out smaller sections like a helper method.  Doing this makes the code more readable, easier to maintain and reusable.  Say there is a long method that normalizes a string, calculates a date and inserts data into a database.  Instead of including all these things in one method you can factor out the code that normalizes a string or calculates a date into their own functions. Then when you write the insert method you simply call those functions to use them in your method.  At this point, other methods that need to normalize a string can also use this method.  If the normalize method needs to be updated it only needs to be updated in its function instead of all over the code base, and this makes it more maintainable.
+This CRUD Python module could be used on another project in the future to perform CRUD operations on a MongoDB database. 
+
+  
 ## How do you approach a problem as a computer scientist? Consider how you approached the database or dashboard requirements that Grazioso Salvare requested. How did your approach to this project differ from previous assignments in other courses? What techniques or strategies would you use in the future to create databases to meet other client requests?
+
+Generally when I approach a problem I like to look at the big picture to figure out what I am trying to solve.  Once I know the overall goal I like to break the problem down into smaller manageable chunks.  I tend to get overwhelmed if I tackled the problem head on right from the get go. The smaller to do tasks help keep me on track and make the problem feel solvable. I used this approach on this project, and the guides helped greatly with this.  They give you a template of how to break each project or milestone down into smaller chunks, which makes it much easier to complete the projects. This approach could be used again to create other CRUD functionality.  Instead of trying to tackle the whole things at once, break it down and day one work on the create method and so on.  
+
+
 ## What do computer scientists do, and why does it matter? How would your work on this type of project help a company, like Grazioso Salvare, to do their work better?
+Computer scientists figure out how to solve problems. Grazioso Salvare had a need to find search and rescue dogs for training programs.  They has specific criteria on the animals they needed to find in order to have the best training outcome. Instead of a person having to sort through a file to search for types of dogs of varying ages this dashboard allows them to quickly and accurately find the breeds and ages of potential dogs and their location.  It makes work easier and faster for Grazioso Salvare so they can focus on dog training and not split that time also sourcing dogs. 
